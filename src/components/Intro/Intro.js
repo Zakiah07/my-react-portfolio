@@ -7,7 +7,7 @@ const Intro = () => {
       <p>{data.nameintro}</p>
       <p> {data.description}</p>
       <p> {data.motto}</p>
-      <img height={100} width={100} src={data.img} alt={"alt"} />
+      <img height={400} width={400} src={data.img} alt={"alt"} />
     </div>
   );
 };

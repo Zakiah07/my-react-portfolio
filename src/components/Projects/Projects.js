@@ -14,7 +14,9 @@ const Projects = () => {
               <li>{language}</li>
             ))}
           </p>
-          <p>{project.link}</p>
+          <a href={project.link}>
+            <img height={400} width={900} src={project.img} alt={"alt"} />
+          </a>
         </div>
       ))}
     </div>
