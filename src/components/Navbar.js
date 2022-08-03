@@ -1,27 +1,42 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-const Container = styled.div`
+const Container = styled.nav`
   display: flex;
-  padding: 10px 20px;
-  justify-content: space-around;
-  border-bottom: 1px solid black;
+  justify-content: center;
+  border-bottom: 1px solid #ebcf63;
+  background-color: #191c29;
+  padding: 20px 20px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 `;
 
 const LinksContainer = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  font-weight: bold;
+`;
+
+// const StyledLink = styled(Link)`
+//   color: inherit;
+//   text-decoration: none;
+// `;
+
+const StyledAnchor = styled.a`
+  color: inherit;
+  text-decoration: none;
 `;
 
 const Navbar = () => {
   return (
     <Container>
       <LinksContainer>
-        <Link to="#">Intro</Link>
-        <Link to="#">Skills</Link>
-        <Link to="#">Projects</Link>
-        <Link to="#">Contact Me</Link>
+        <StyledAnchor href="#intro">Intro</StyledAnchor>
+        <StyledAnchor href="#skills">Skills</StyledAnchor>
+        <StyledAnchor href="#projects">Projects</StyledAnchor>
+        <StyledAnchor href="#contacts">Contact Me</StyledAnchor>
       </LinksContainer>
     </Container>
   );
