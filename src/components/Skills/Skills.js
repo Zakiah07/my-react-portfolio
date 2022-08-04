@@ -3,25 +3,42 @@ import styled from "styled-components";
 import { skillsData } from "./skills.data";
 
 const Container = styled.div`
-  padding: 10px 20px;
-  border-bottom: 1px solid black;
+  padding: 20px 20px;
+  border-bottom: 1px solid #ebcf63;
+`;
+
+const ListContainer = styled.div`
   display: flex;
+  gap: 50px;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+`;
+
+const Heading = styled.div`
+  justify-content: center;
+  display: flex;
+`;
+
+const Descp = styled.div`
+  color: #ebcf63;
 `;
 
 const Skills = () => {
   return (
     <Container id="skills">
-      <h2>Skills</h2>
-      {skillsData.map((skill) => (
-        <div>
-          <h3>{skill.name}</h3>
-          <p>{skill.description}</p>
-          <p>{skill.icon}</p>
-        </div>
-      ))}
+      <Heading>
+        <h2>Things that I have Learnt</h2>
+      </Heading>
+      <ListContainer>
+        {skillsData.map((skill) => (
+          <div>
+            <p>{skill.icon}</p>
+            <h4>{skill.name}</h4>
+            <Descp>
+              <p>{skill.description}</p>
+            </Descp>
+          </div>
+        ))}
+      </ListContainer>
     </Container>
   );
 };

@@ -3,11 +3,12 @@ import styled from "styled-components";
 import { introData as data } from "./intro.data";
 
 const Container = styled.div`
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ebcf63;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px 20px;
 `;
 
 const Intro = () => {
@@ -16,7 +17,7 @@ const Intro = () => {
       <h1> {data.description}</h1>
       <p>{data.nameintro}</p>
       <p> {data.motto}</p>
-      <img height={400} width={400} src={data.img} alt={"alt"} />
+      <img height={300} width={300} src={data.img} alt={"alt"} />
     </Container>
   );
 };

@@ -1,27 +1,32 @@
+import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
+import { SiJavascript } from "react-icons/si";
+import { FaReact, FaStar } from "react-icons/fa";
+import { TbBrandGithub } from "react-icons/tb";
+
 export const skillsData = [
   {
     name: "HTML",
-    description: "rthmkjernjkd",
-    icon: "link",
+    icon: <IoLogoHtml5 />,
+    description: [<FaStar />, <FaStar />],
   },
   {
     name: "CSS",
-    description: "jrgwetg",
-    icon: "link",
+    icon: <IoLogoCss3 />,
+    description: [<FaStar />, <FaStar />, <FaStar />],
   },
   {
     name: "JavaScript",
-    description: "cetjgws",
-    icon: "link",
+    icon: <SiJavascript />,
+    description: [<FaStar />, <FaStar />],
   },
   {
     name: "React JS",
-    description: "erjkthbiuheuiw",
-    icon: "link",
+    icon: <FaReact />,
+    description: [<FaStar />, <FaStar />],
   },
   {
     name: "Git",
-    description: "erjkthbiuheuiw",
-    icon: "link",
+    icon: <TbBrandGithub />,
+    description: [<FaStar />, <FaStar />, <FaStar />],
   },
 ];

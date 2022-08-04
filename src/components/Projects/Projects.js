@@ -3,41 +3,79 @@ import styled from "styled-components";
 import { projectsData } from "./projects.data";
 
 const Container = styled.div`
-  padding: 10px 20px;
+  padding: 20px 20px;
   align-items: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
+  border-bottom: 1px solid #ebcf63;
 `;
 
 const ListContainer = styled.div`
   padding: 10px 20px;
   display: flex;
-  border-bottom: 1px solid black;
+  gap: 20px;
+`;
+
+const StyledAnchor = styled.a`
+  display: block;
+`;
+
+const Box = styled.div`
+  border: 4px solid rebeccapurple;
+  border-radius: 30px;
+  display: block;
+`;
+
+const Heading = styled.div`
+  justify-content: center;
+  display: flex;
+`;
+
+const Descp = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  height: auto;
+  width: 100%;
 `;
+
+// const Image = styled.div`
+//   border-radius: 30px;
+// `;
+
+// const LanguageUsed = styled.p`
+//   justify-content: center;
+//   align-items: center;
+//   display: flex;
+//   flex-direction: column;
+// `;
 
 const Projects = () => {
   return (
     <Container id="projects">
-      <h4>Projects</h4>
+      <Heading>
+        <h2>Stuff that I have Built</h2>
+      </Heading>
       <ListContainer>
         {projectsData.map((project) => (
           <div>
-            <h5>{project.title}</h5>
-            <p>{project.description}</p>
-            <p>
-              {project.languages.map((language) => (
-                <li>{language}</li>
-              ))}
-            </p>
-            <a href={project.link}>
-              <img height={400} width={600} src={project.img} alt={"alt"} />
-            </a>
+            <Box>
+              <Descp>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                {/* <LanguageUsed> */}
+                <p>
+                  {project.languages.map((language) => (
+                    <p>{language}</p>
+                  ))}
+                </p>
+                {/* </LanguageUsed> */}
+                <StyledAnchor href={project.link}>
+                  {/* <Image> */}
+                  <img height={200} width={400} src={project.img} alt={"alt"} />
+                  {/* </Image> */}
+                </StyledAnchor>
+              </Descp>
+            </Box>
           </div>
         ))}
       </ListContainer>

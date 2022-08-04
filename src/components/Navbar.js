@@ -27,6 +27,11 @@ const LinksContainer = styled.div`
 const StyledAnchor = styled.a`
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    color: #ebcf63;
+    transition: all 0.3s ease;
+  }
 `;
 
 const Navbar = () => {
