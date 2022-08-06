@@ -4,7 +4,6 @@ import { skillsData } from "./skills.data";
 
 const Container = styled.div`
   padding: 40px 30px 20px 30px;
-  border-bottom: 1px solid #ebcf63;
 `;
 
 const ListContainer = styled.div`

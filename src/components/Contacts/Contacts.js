@@ -11,19 +11,20 @@ const Container = styled.div`
   gap: 20px;
 `;
 
-const Icon = styled.div`
-  padding: 10px 20px;
-  align-items: center;
+const IconContainer = styled.a`
+  padding: 0px 10px;
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   font-size: 40px;
+  color: #b29eb5;
+`;
 
-  &:hover {
-    color: #ebcf63;
-    transition: all 0.3s ease;
-  }
+const ListContainer = styled.div`
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  gap: 30px;
 `;
 
 const Button = styled.div`
@@ -49,10 +50,11 @@ const StyledAnchor = styled.a`
 `;
 
 const Descp = styled.div`
-  padding: 0px 180px 15px 180px;
+  padding: 30px 180px 30px 180px;
   align-items: center;
   justify-content: center;
   display: flex;
+  text-align: center;
 `;
 
 const Contacts = () => {
@@ -67,11 +69,11 @@ const Contacts = () => {
           {contactsData.buttontext}
         </StyledAnchor>
       </Button>
-      <Icon>
+      <ListContainer>
         {contactsData.platforms.map((platform) => (
-          <a href={platform.link}>{platform.icon}</a>
+          <IconContainer href={platform.link}>{platform.icon}</IconContainer>
         ))}
-      </Icon>
+      </ListContainer>
     </Container>
   );
 };

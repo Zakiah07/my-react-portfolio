@@ -11,6 +11,7 @@ export const projectsData = [
     description:
       "This project is focusing on styling the components for a marketing agency.",
     languages: [<IoLogoHtml5 />, <IoLogoCss3 />, <SiJavascript />, <FaReact />],
+    buttontext: "Check It Out !",
     img: image1,
     alt: "Image",
     link: "https://marketingplatform.netlify.app/",
@@ -20,6 +21,7 @@ export const projectsData = [
     description:
       "This project enables user to search a movie based on the data fetched using API from Axios.",
     languages: [<IoLogoHtml5 />, <IoLogoCss3 />, <SiJavascript />, <FaReact />],
+    buttontext: "Check It Out !",
     img: image2,
     alt: "Image",
     link: "https://moviedatabasez.netlify.app/",
@@ -27,8 +29,9 @@ export const projectsData = [
   {
     title: "Todo Note",
     description:
-      "A simple Todo List where user can marked and edit their Todo inputs.",
+      "A simple Todo List where user can mark, delete and edit their Todo inputs.",
     languages: [<IoLogoHtml5 />, <IoLogoCss3 />, <SiJavascript />, <FaReact />],
+    buttontext: "Check It Out !",
     img: image3,
     alt: "Image",
     link: "https://todolistzz.netlify.app/",

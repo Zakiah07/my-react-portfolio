@@ -11,12 +11,12 @@ export const contactsData = {
   platforms: [
     {
       name: "Linkedin",
-      icon: <FiLinkedin />,
+      icon: <FiLinkedin color="#b29eb5" />,
       link: "https://github.com/Zakiah07",
     },
     {
       name: "Github",
-      icon: <TbBrandGithub />,
+      icon: <TbBrandGithub color="#b29eb5" />,
       link: "https://www.linkedin.com/in/zakiahhh/",
     },
   ],

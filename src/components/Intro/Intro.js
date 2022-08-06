@@ -3,12 +3,11 @@ import styled from "styled-components";
 import { introData as data } from "./intro.data";
 
 const Container = styled.div`
-  border-bottom: 1px solid #ebcf63;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-direction: column;
-  padding: 40px 40px;
+  padding: 50px 80px;
   gap: 30px;
 `;
 

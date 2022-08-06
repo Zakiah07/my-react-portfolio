@@ -5,7 +5,7 @@ import { projectsData } from "./projects.data";
 const Container = styled.div`
   padding: 40px 40px;
   align-items: center;
-  border-bottom: 1px solid #ebcf63;
+  height: 700px;
 `;
 
 const ListContainer = styled.div`
@@ -25,7 +25,7 @@ const Box = styled.div`
   width: 400px;
   height: 400px;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 10px 40px;
 `;
 
 const Heading = styled.div`
@@ -57,6 +57,28 @@ const LanguageList = styled.p`
   gap: 30px;
 `;
 
+const Button = styled.div`
+  border-radius: 4px;
+  border: 2px solid #ebcf63;
+  cursor: pointer;
+  background: #b29eb5;
+  white-space: nowrap;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #191c29;
+
+  &:hover {
+    background: #ebcf63;
+    transition: all 0.3s ease-out;
+  }
+`;
+
+const StyledAnchorb = styled.div`
+  color: #191c29;
+  text-decoration: none;
+`;
+
 const Projects = () => {
   return (
     <Container id="projects">
@@ -75,6 +97,11 @@ const Projects = () => {
                     <p>{language}</p>
                   ))}
                 </LanguageList>
+                <Button>
+                  <StyledAnchorb href={project.link}>
+                    {project.buttontext}
+                  </StyledAnchorb>
+                </Button>
                 <StyledAnchor href={project.link}>
                   <Img src={project.img} alt={"alt"} />
                 </StyledAnchor>
