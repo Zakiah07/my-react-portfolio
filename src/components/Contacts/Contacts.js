@@ -3,11 +3,12 @@ import styled from "styled-components";
 import { contactsData } from "./contacts.data";
 
 const Container = styled.div`
-  padding: 10px 20px;
+  padding: 40px 40px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   display: flex;
+  gap: 20px;
 `;
 
 const Icon = styled.div`
@@ -48,7 +49,7 @@ const StyledAnchor = styled.a`
 `;
 
 const Descp = styled.div`
-  padding: 0px 200px 15px 200px;
+  padding: 0px 180px 15px 180px;
   align-items: center;
   justify-content: center;
   display: flex;

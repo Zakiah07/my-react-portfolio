@@ -1,9 +1,14 @@
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 import { SiJavascript } from "react-icons/si";
 import { FaReact, FaStar } from "react-icons/fa";
-import { TbBrandGithub } from "react-icons/tb";
+import { TbBrandPython, TbBrandGithub } from "react-icons/tb";
 
 export const skillsData = [
+  {
+    name: "Python",
+    icon: <TbBrandPython />,
+    description: [<FaStar />, <FaStar />, <FaStar />],
+  },
   {
     name: "HTML",
     icon: <IoLogoHtml5 />,

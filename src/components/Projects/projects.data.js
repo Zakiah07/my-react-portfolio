@@ -31,6 +31,6 @@ export const projectsData = [
     languages: [<IoLogoHtml5 />, <IoLogoCss3 />, <SiJavascript />, <FaReact />],
     img: image3,
     alt: "Image",
-    link: "https://ztodolist.netlify.app/",
+    link: "https://todolistzz.netlify.app/",
   },
 ];

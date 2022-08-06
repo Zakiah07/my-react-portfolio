@@ -3,14 +3,18 @@ import styled from "styled-components";
 import { skillsData } from "./skills.data";
 
 const Container = styled.div`
-  padding: 20px 20px;
+  padding: 40px 30px 20px 30px;
   border-bottom: 1px solid #ebcf63;
 `;
 
 const ListContainer = styled.div`
-  display: flex;
-  gap: 50px;
+  display: grid;
   justify-content: center;
+  grid-template-columns: auto auto auto;
+  margin: 0;
+  column-gap: 150px;
+  padding: 50px 40px 30px 40px;
+  row-gap: 50px;
 `;
 
 const Heading = styled.div`

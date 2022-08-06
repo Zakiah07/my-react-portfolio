@@ -8,7 +8,8 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px 20px;
+  padding: 40px 40px;
+  gap: 30px;
 `;
 
 const Intro = () => {

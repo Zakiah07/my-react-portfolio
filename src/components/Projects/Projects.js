@@ -3,15 +3,15 @@ import styled from "styled-components";
 import { projectsData } from "./projects.data";
 
 const Container = styled.div`
-  padding: 20px 20px;
+  padding: 40px 40px;
   align-items: center;
   border-bottom: 1px solid #ebcf63;
 `;
 
 const ListContainer = styled.div`
-  padding: 10px 20px;
+  padding: 50px 0px 30px 0px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 `;
 
 const StyledAnchor = styled.a`
@@ -19,9 +19,13 @@ const StyledAnchor = styled.a`
 `;
 
 const Box = styled.div`
-  border: 4px solid rebeccapurple;
-  border-radius: 30px;
-  display: block;
+  border-radius: 20px;
+  display: flex;
+  background-color: #1d2951;
+  width: 400px;
+  height: 400px;
+  flex-direction: column;
+  padding: 20px 40px;
 `;
 
 const Heading = styled.div`
@@ -34,20 +38,24 @@ const Descp = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: auto;
-  width: 100%;
+  padding: 20px 10px;
+  gap: 30px;
+  text-align: center;
 `;
 
-// const Image = styled.div`
-//   border-radius: 30px;
-// `;
+const Img = styled.img`
+  width: 400px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+`;
 
-// const LanguageUsed = styled.p`
-//   justify-content: center;
-//   align-items: center;
-//   display: flex;
-//   flex-direction: column;
-// `;
+const LanguageList = styled.p`
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+`;
 
 const Projects = () => {
   return (
@@ -62,17 +70,13 @@ const Projects = () => {
               <Descp>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                {/* <LanguageUsed> */}
-                <p>
+                <LanguageList>
                   {project.languages.map((language) => (
                     <p>{language}</p>
                   ))}
-                </p>
-                {/* </LanguageUsed> */}
+                </LanguageList>
                 <StyledAnchor href={project.link}>
-                  {/* <Image> */}
-                  <img height={200} width={400} src={project.img} alt={"alt"} />
-                  {/* </Image> */}
+                  <Img src={project.img} alt={"alt"} />
                 </StyledAnchor>
               </Descp>
             </Box>
