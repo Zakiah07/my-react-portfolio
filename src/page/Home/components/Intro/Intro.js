@@ -4,8 +4,8 @@ import { introData as data } from "./intro.data";
 
 const Container = styled.div`
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 50px 80px;
   gap: 30px;

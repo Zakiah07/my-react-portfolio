@@ -1,6 +1,6 @@
-import image1 from "../../images/marketing.png";
-import image2 from "../../images/moviedatabase.png";
-import image3 from "../../images/todoList.png";
+import image1 from "../../../../images/marketing.png";
+import image2 from "../../../../images/moviedatabase.png";
+import image3 from "../../../../images/todoList.png";
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
