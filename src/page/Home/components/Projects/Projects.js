@@ -4,9 +4,11 @@ import { projectsData } from "./projects.data";
 import { StyledAnchor } from "../../../../components/Anchor";
 
 const Container = styled.div`
-  padding: 40px 40px;
+  padding: 50px 30px 120px 30px;
   align-items: center;
-  height: 700px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 `;
 
 const ListContainer = styled.div`

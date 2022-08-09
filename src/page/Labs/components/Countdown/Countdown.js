@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import CounterBox from "../../../../components/CounterBox";
 
 const Container = styled.div`
   display: flex;
@@ -8,6 +9,20 @@ const Container = styled.div`
   flex-direction: column;
   padding: 50px 80px;
   gap: 30px;
+`;
+
+const Heading = styled.div`
+  justify-content: center;
+  display: flex;
+`;
+
+const CounterBoxContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 10px;
 `;
 
 const newYears = "1 Jan 2023";
@@ -40,25 +55,15 @@ const Countdown = () => {
 
   return (
     <Container>
-      <h1>New Year 2023</h1>
-      <div id="countdown-container">
-        <div id="countdown-el days-c">
-          <p id="days">{countdown.days}</p>
-          <span>Days</span>
-        </div>
-        <div id="countdown-el hours-c">
-          <p id="hours">{countdown.hours}</p>
-          <span>Hours</span>
-        </div>
-        <div id="countdown-el mins-c">
-          <p id="mins">{countdown.mins}</p>
-          <span>Mins</span>
-        </div>
-        <div id="countdown-el seconds-c">
-          <p id="seconds">{countdown.seconds}</p>
-          <span>Seconds</span>
-        </div>
-      </div>
+      <Heading>
+        <h1>New Year 2023</h1>
+      </Heading>
+      <CounterBoxContainer>
+        <CounterBox number={countdown.days} label="Days" />
+        <CounterBox number={countdown.hours} label="Hours" />
+        <CounterBox number={countdown.mins} label="Minutes" />
+        <CounterBox number={countdown.seconds} label="Seconds" />
+      </CounterBoxContainer>
     </Container>
   );
 };
