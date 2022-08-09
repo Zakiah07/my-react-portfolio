@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { projectsData } from "./projects.data";
+import { StyledAnchor } from "../../../../components/Anchor";
 
 const Container = styled.div`
   padding: 40px 40px;
@@ -12,10 +13,6 @@ const ListContainer = styled.div`
   padding: 50px 0px 30px 0px;
   display: flex;
   gap: 30px;
-`;
-
-const StyledAnchor = styled.a`
-  display: block;
 `;
 
 const Box = styled.div`
@@ -74,11 +71,6 @@ const Button = styled.div`
   }
 `;
 
-const StyledAnchorb = styled.div`
-  color: #191c29;
-  text-decoration: none;
-`;
-
 const Projects = () => {
   return (
     <Container id="projects">
@@ -97,11 +89,9 @@ const Projects = () => {
                     <p>{language}</p>
                   ))}
                 </LanguageList>
-                <Button>
-                  <StyledAnchorb href={project.link}>
-                    {project.buttontext}
-                  </StyledAnchorb>
-                </Button>
+                <StyledAnchor href={project.link}>
+                  <Button>{project.buttontext}</Button>
+                </StyledAnchor>
                 <StyledAnchor href={project.link}>
                   <Img src={project.img} alt={"alt"} />
                 </StyledAnchor>

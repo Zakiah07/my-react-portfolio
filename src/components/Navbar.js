@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { StyledLink, StyledAnchor } from "./Anchor";
 
 const Container = styled.nav`
   display: flex;
@@ -18,21 +18,6 @@ const LinksContainer = styled.div`
   display: flex;
   gap: 40px;
   font-weight: bold;
-`;
-
-const StyledLink = styled(Link)`
-  color: inherit;
-  text-decoration: none;
-`;
-
-const StyledAnchor = styled.a`
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    color: #ebcf63;
-    transition: all 0.3s ease;
-  }
 `;
 
 const RightContainer = styled.div`

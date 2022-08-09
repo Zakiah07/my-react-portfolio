@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { contactsData } from "./contacts.data";
+import { StyledAnchor } from "../../../../components/Anchor";
 
 const Container = styled.div`
   padding: 40px 40px;
@@ -42,11 +43,6 @@ const Button = styled.div`
     background: #ebcf63;
     transition: all 0.3s ease-out;
   }
-`;
-
-const StyledAnchor = styled.a`
-  color: inherit;
-  text-decoration: none;
 `;
 
 const Descp = styled.div`
