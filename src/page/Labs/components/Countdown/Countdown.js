@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import CounterBox from "../../../../components/CounterBox";
+import image4 from "../../../../images/firework.jpg";
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px 80px;
+  padding: 50px 80px 50px 80px;
   gap: 30px;
+`;
+
+const ImageContainer = styled.div`
+  position: relative;
+  text-align: center;
+`;
+
+const Img = styled.img`
+  width: 400px;
 `;
 
 const Heading = styled.div`
@@ -55,15 +65,18 @@ const Countdown = () => {
 
   return (
     <Container>
-      <Heading>
-        <h1>New Year 2023</h1>
-      </Heading>
-      <CounterBoxContainer>
-        <CounterBox number={countdown.days} label="Days" />
-        <CounterBox number={countdown.hours} label="Hours" />
-        <CounterBox number={countdown.mins} label="Minutes" />
-        <CounterBox number={countdown.seconds} label="Seconds" />
-      </CounterBoxContainer>
+      <ImageContainer>
+        <Img src={image4} />
+        <Heading>
+          <h1>New Year 2023</h1>
+        </Heading>
+        <CounterBoxContainer>
+          <CounterBox number={countdown.days} label="Days" />
+          <CounterBox number={countdown.hours} label="Hours" />
+          <CounterBox number={countdown.mins} label="Minutes" />
+          <CounterBox number={countdown.seconds} label="Seconds" />
+        </CounterBoxContainer>
+      </ImageContainer>
     </Container>
   );
 };
