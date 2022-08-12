@@ -30,9 +30,9 @@ const Navbar = () => {
     <Container>
       <LinksContainer>
         <StyledAnchor href="/#intro">Intro</StyledAnchor>
-        <StyledAnchor href="#skills">Skills</StyledAnchor>
-        <StyledAnchor href="#projects">Projects</StyledAnchor>
-        <StyledAnchor href="#contacts">Contact Me</StyledAnchor>
+        <StyledAnchor href="/#skills">Skills</StyledAnchor>
+        <StyledAnchor href="/#projects">Projects</StyledAnchor>
+        <StyledAnchor href="/#contacts">Contact Me</StyledAnchor>
         <RightContainer>
           <StyledLink to={"/labs"}>Labs</StyledLink>
         </RightContainer>

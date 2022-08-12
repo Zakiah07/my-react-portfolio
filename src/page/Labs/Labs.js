@@ -2,8 +2,6 @@ import React from "react";
 import Countdown from "./components/Countdown/Countdown";
 import TodoList from "./components/Todo/TodoList";
 import GithubProfiles from "./components/GithubProfiles/GithubProfiles";
-import Drawing from "./components/Drawing/Drawing";
-import Quiz from "./components/Quiz/Quiz";
 
 const Labs = () => {
   return (
@@ -11,8 +9,6 @@ const Labs = () => {
       <Countdown />
       <TodoList />
       <GithubProfiles />
-      <Drawing />
-      <Quiz />
     </div>
   );
 };

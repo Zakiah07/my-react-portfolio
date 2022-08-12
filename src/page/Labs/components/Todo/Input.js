@@ -95,14 +95,14 @@ const Input = ({ edit, onSubmit }) => {
           <>
             <input
               type="text"
-              placeholder="Add your todo"
+              placeholder="Add your plan"
               value={input}
               name="text"
               className="todo-input"
               onChange={handleChange}
               ref={inputRef}
             />
-            <button className="todo-button">Add todo</button>
+            <button className="todo-button">Add Plan</button>
           </>
         )}
       </form>

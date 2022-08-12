@@ -9,11 +9,9 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 50px 80px 50px 80px;
-  gap: 30px;
 `;
 
 const ImageContainer = styled.div`
-  position: relative;
   text-align: center;
 `;
 
@@ -24,6 +22,7 @@ const Img = styled.img`
 const Heading = styled.div`
   justify-content: center;
   display: flex;
+  padding-top: 20px;
 `;
 
 const CounterBoxContainer = styled.div`
@@ -32,7 +31,7 @@ const CounterBoxContainer = styled.div`
   gap: 10px;
   justify-content: center;
   text-align: center;
-  padding: 10px 10px;
+  padding: 30px 10px;
 `;
 
 const newYears = "1 Jan 2023";

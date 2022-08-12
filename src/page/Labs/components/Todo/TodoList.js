@@ -13,7 +13,7 @@ const Container = styled.div`
   min-height: 600px;
   background: #1d2951;
   text-align: center;
-  margin: 50px auto;
+  margin: 40px auto;
   border-radius: 20px;
 `;
 const Heading = styled.h1`
