@@ -67,6 +67,7 @@ const Input = ({ edit, onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     onSubmit({
       id: Math.floor(Math.random() * 10000),
       text: input,

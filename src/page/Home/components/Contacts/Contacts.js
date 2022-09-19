@@ -60,11 +60,9 @@ const Contacts = () => {
       <Descp>
         <p>{contactsData.description}</p>
       </Descp>
-      <Button>
-        <StyledAnchor href={contactsData.email}>
-          {contactsData.buttontext}
-        </StyledAnchor>
-      </Button>
+      <StyledAnchor href={contactsData.email}>
+        <Button>{contactsData.buttontext}</Button>
+      </StyledAnchor>
       <ListContainer>
         {contactsData.platforms.map((platform) => (
           <IconContainer href={platform.link}>{platform.icon}</IconContainer>
