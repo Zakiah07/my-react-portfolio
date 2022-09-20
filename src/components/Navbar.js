@@ -12,6 +12,16 @@ const Container = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
+
+  @media screen and (max-width: 420px) {
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+    height: 60px;
+  }
 `;
 
 const LinksContainer = styled.div`

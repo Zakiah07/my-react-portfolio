@@ -13,8 +13,10 @@ const Container = styled.div`
 
 const ListContainer = styled.div`
   padding: 50px 0px 30px 0px;
-  display: flex;
-  gap: 30px;
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 150px;
 `;
 
 const Box = styled.div`

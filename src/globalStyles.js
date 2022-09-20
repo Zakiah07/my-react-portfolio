@@ -30,6 +30,8 @@ const body = css`
 
 const GlobalStyle = createGlobalStyle`
     ${body}
+
+    
 `;
 
 export default GlobalStyle;
