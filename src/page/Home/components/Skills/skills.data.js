@@ -7,12 +7,12 @@ export const skillsData = [
   {
     name: "Python",
     icon: <TbBrandPython />,
-    description: [<FaStar />, <FaStar />, <FaStar />],
+    description: [<FaStar />, <FaStar />],
   },
   {
     name: "HTML",
     icon: <IoLogoHtml5 />,
-    description: [<FaStar />, <FaStar />],
+    description: [<FaStar />, <FaStar />, <FaStar />],
   },
   {
     name: "CSS",
@@ -22,7 +22,7 @@ export const skillsData = [
   {
     name: "JavaScript",
     icon: <SiJavascript />,
-    description: [<FaStar />, <FaStar />],
+    description: [<FaStar />, <FaStar />, <FaStar />],
   },
   {
     name: "React JS",
