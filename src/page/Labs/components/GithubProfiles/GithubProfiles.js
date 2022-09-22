@@ -33,6 +33,10 @@ const Container = styled.div`
   margin: 70px auto;
   border-radius: 20px;
 
+  @media (max-width: 700px) {
+    min-width: 300px;
+  }
+
   .card {
     display: flex;
     justify-content: center;

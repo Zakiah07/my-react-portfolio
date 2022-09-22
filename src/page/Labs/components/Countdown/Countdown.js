@@ -9,6 +9,10 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 50px 80px 50px 80px;
+
+  @media (max-width: 700px) {
+    padding: 50px 40px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -17,6 +21,10 @@ const ImageContainer = styled.div`
 
 const Img = styled.img`
   width: 400px;
+
+  @media (max-width: 700px) {
+    max-width: 300px;
+  }
 `;
 
 const Heading = styled.div`
