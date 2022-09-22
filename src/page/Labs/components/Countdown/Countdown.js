@@ -8,11 +8,8 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px 80px 50px 80px;
-
-  @media (max-width: 700px) {
-    padding: 50px 40px;
-  }
+  position: relative;
+  max-width: 500px;
 `;
 
 const ImageContainer = styled.div`
@@ -20,17 +17,16 @@ const ImageContainer = styled.div`
 `;
 
 const Img = styled.img`
-  width: 400px;
-
-  @media (max-width: 700px) {
-    max-width: 300px;
-  }
+  width: 100%;
+  border-radius: 20px;
+  filter: blur(1px) grayscale(60%);
 `;
 
 const Heading = styled.div`
   justify-content: center;
   display: flex;
   padding-top: 20px;
+  color: white;
 `;
 
 const CounterBoxContainer = styled.div`
@@ -40,6 +36,10 @@ const CounterBoxContainer = styled.div`
   justify-content: center;
   text-align: center;
   padding: 30px 10px;
+`;
+
+const OverlayTextContainer = styled.div`
+  position: absolute;
 `;
 
 const newYears = "1 Jan 2023";
@@ -74,6 +74,8 @@ const Countdown = () => {
     <Container>
       <ImageContainer>
         <Img src={image4} />
+      </ImageContainer>
+      <OverlayTextContainer>
         <Heading>
           <h1>New Year 2023</h1>
         </Heading>
@@ -83,7 +85,7 @@ const Countdown = () => {
           <CounterBox number={countdown.mins} label="Minutes" />
           <CounterBox number={countdown.seconds} label="Seconds" />
         </CounterBoxContainer>
-      </ImageContainer>
+      </OverlayTextContainer>
     </Container>
   );
 };

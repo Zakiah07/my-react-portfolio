@@ -4,20 +4,23 @@ import Todo from "./Todo";
 import Input from "./Input";
 
 const Container = styled.div`
-  padding: 30px 80px 40px 80px;
-  gap: 30px;
+  padding: 30px 20px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 520px;
+  max-width: 500px;
+  width: 100%;
   min-height: 600px;
   background: #1d2951;
   text-align: center;
   margin: 40px auto;
   border-radius: 20px;
 `;
+
 const Heading = styled.h1`
   font-size: 15px;
+  margin-bottom: 20px;
 `;
 
 const TodoList = () => {

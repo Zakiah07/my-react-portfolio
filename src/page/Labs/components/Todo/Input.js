@@ -6,18 +6,17 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   .todo-form {
-    margin-bottom: 15px;
     display: flex;
+    width: 100%;
   }
 
   .todo-input {
     padding: 14px 32px 14px 16px;
     border-radius: 5px 0 0 5px;
+    width: 100%;
     border: 2px solid #ebcf63;
     outline: none;
-    width: 240px;
     background: transparent;
     color: #b29eb5;
   }

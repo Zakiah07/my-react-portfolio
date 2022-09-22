@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Form, Card, Image, Icon } from "semantic-ui-react";
+import { Icon } from "semantic-ui-react";
 import styled from "styled-components";
 
 const Heading = styled.h1`
@@ -25,29 +25,32 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  padding: 40px 80px 40px 80px;
-  width: 700px;
+  padding: 30px 20px;
+  max-width: 500px;
   min-height: 600px;
+  width: 100%;
   background: #1d2951;
   text-align: center;
-  margin: 70px auto;
+  margin: 40px auto;
   border-radius: 20px;
-
-  @media (max-width: 700px) {
-    min-width: 300px;
-  }
 
   .card {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding: 15px;
     gap: 10px;
+    width: 100%;
+  }
+
+  .image {
+    width: 80%;
   }
 
   .user-form {
     margin-bottom: 15px;
     display: flex;
+    flex-wrap: none;
   }
 
   .user-input {
@@ -55,13 +58,11 @@ const Container = styled.div`
     border-radius: 5px 0 0 5px;
     border: 2px solid #ebcf63;
     outline: none;
-    width: 240px;
     background: transparent;
     color: #b29eb5;
   }
 
   .user-input::placeholder {
-    color: #fff;
   }
 
   .user-button {
@@ -135,7 +136,7 @@ function GithubProfiles() {
           <h1>Any Github Profile to Check ?</h1>
         </Heading>
       </div>
-      <Form classname="user-form" onSubmit={handleSubmit}>
+      <form className="user-form" onSubmit={handleSubmit}>
         <input
           className="user-input"
           type="text"
@@ -144,36 +145,34 @@ function GithubProfiles() {
           onChange={handleSearch}
         />
         <button className="user-button ">Search</button>
-      </Form>
+      </form>
       {error ? (
         <h1>{error}</h1>
       ) : (
         <div className="card">
-          <Card>
-            <Image src={avatar} wrapped ui={false} />
-            <CardContent>
-              <CardName>{name}</CardName>
-              <CardUsername>{userName}</CardUsername>
-            </CardContent>
-            <CardContent extra>
-              <div>
-                <Icon name="user" />
-                {followers} Followers
-              </div>
-            </CardContent>
-            <CardContent extra>
-              <div>
-                <Icon name="user" />
-                {repos} Repos
-              </div>
-            </CardContent>
-            <CardContent extra>
-              <div>
-                <Icon name="user" />
-                {following} Following
-              </div>
-            </CardContent>
-          </Card>
+          <img src={avatar} alt="" className="image" />
+          <CardContent>
+            <CardName>{name}</CardName>
+            <CardUsername>{userName}</CardUsername>
+          </CardContent>
+          <CardContent extra>
+            <div>
+              <Icon name="user" />
+              {followers} Followers
+            </div>
+          </CardContent>
+          <CardContent extra>
+            <div>
+              <Icon name="user" />
+              {repos} Repos
+            </div>
+          </CardContent>
+          <CardContent extra>
+            <div>
+              <Icon name="user" />
+              {following} Following
+            </div>
+          </CardContent>
         </div>
       )}
     </Container>

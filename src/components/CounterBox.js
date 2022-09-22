@@ -18,11 +18,6 @@ const ContainerBox = styled.div`
   padding: 10px;
   border-radius: 20px;
   width: 100px;
-
-  @media (max-width: 700px) {
-    max-width: 70px;
-    font-size: small;
-  }
 `;
 
 export default CounterBox;

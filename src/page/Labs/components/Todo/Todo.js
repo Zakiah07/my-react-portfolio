@@ -19,7 +19,6 @@ const Container = styled.div`
     background: linear-gradient(90deg, #ffdd00 0%, #fbb034 100%);
     padding: 16px;
     border-radius: 5px;
-    width: 90%;
   }
 
   .todo-row:nth-child(3n + 1) {
