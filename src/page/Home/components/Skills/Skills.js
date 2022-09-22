@@ -14,6 +14,10 @@ const ListContainer = styled.div`
   column-gap: 150px;
   padding: 50px 40px 30px 40px;
   row-gap: 50px;
+
+  @media (max-width: 700px) {
+    grid-template-columns: auto auto;
+  }
 `;
 
 const Heading = styled.div`

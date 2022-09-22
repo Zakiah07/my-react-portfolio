@@ -5,28 +5,47 @@ import { StyledAnchor } from "../../../../components/Anchor";
 
 const Container = styled.div`
   padding: 50px 30px 120px 30px;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-direction: column;
   display: flex;
 `;
 
 const ListContainer = styled.div`
+  margin: 0 auto;
   padding: 50px 0px 30px 0px;
   display: grid;
-  column-gap: 30px;
-  grid-template-columns: auto auto auto;
-  grid-row-gap: 150px;
+  gap: 30px;
+  width: 80vw;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(
+      200px,
+      1fr
+    );
+  justify-content: center;
+  @media (max-width: 1000px) {
+    grid-template-columns: auto auto;
+  }
+  @media (max-width: 700px) {
+    grid-template-columns: auto;
+  }
 `;
 
 const Box = styled.div`
   border-radius: 20px;
   display: flex;
+  width: 100%;
+  z-index: 0;
   background-color: #1d2951;
-  width: 400px;
-  height: 400px;
   flex-direction: column;
-  padding: 10px 40px;
+  padding: 10px 30px;
+  position: relative;
+  padding-bottom: 140px;
+  height: auto;
+
+  @media (max-width: 700px) {
+    grid-template-columns: auto;
+    min-height: 530px;
+  }
 `;
 
 const Heading = styled.div`
@@ -45,8 +64,11 @@ const Descp = styled.div`
 `;
 
 const Img = styled.img`
-  width: 400px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   border-bottom-left-radius: 20px;
+  position: absolute;
   border-bottom-right-radius: 20px;
 `;
 
@@ -83,25 +105,23 @@ const Projects = () => {
       </Heading>
       <ListContainer>
         {projectsData.map((project) => (
-          <div>
-            <Box>
-              <Descp>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <LanguageList>
-                  {project.languages.map((language) => (
-                    <p>{language}</p>
-                  ))}
-                </LanguageList>
-                <StyledAnchor href={project.link}>
-                  <Button>{project.buttontext}</Button>
-                </StyledAnchor>
-                <StyledAnchor href={project.link}>
-                  <Img src={project.img} alt={"alt"} />
-                </StyledAnchor>
-              </Descp>
-            </Box>
-          </div>
+          <Box>
+            <Descp>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <LanguageList>
+                {project.languages.map((language) => (
+                  <p>{language}</p>
+                ))}
+              </LanguageList>
+              <StyledAnchor href={project.link}>
+                <Button>{project.buttontext}</Button>
+              </StyledAnchor>
+              <StyledAnchor href={project.link}>
+                <Img src={project.img} alt={"alt"} />
+              </StyledAnchor>
+            </Descp>
+          </Box>
         ))}
       </ListContainer>
     </Container>

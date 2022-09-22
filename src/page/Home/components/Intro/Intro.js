@@ -8,7 +8,15 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 50px 80px;
-  gap: 30px;
+  row-gap: 30px;
+
+  > h1 {
+    text-align: center;
+  }
+
+  @media (max-width: 700px) {
+    padding: 50px 40px;
+  }
 `;
 
 const Intro = () => {

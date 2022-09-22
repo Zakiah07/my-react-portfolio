@@ -14,3 +14,19 @@ export const StyledAnchor = styled.a`
     transition: all 0.3s ease;
   }
 `;
+
+export const StyledLinkExtended = styled(Link)`
+  color: white;
+  font-size: x-large;
+  font-family: inherit;
+  text-decoration: none;
+  margin: 10px;
+`;
+
+export const StyledAnchorExtended = styled.a`
+  color: white;
+  font-size: x-large;
+  font-family: inherit;
+  text-decoration: none;
+  margin: 10px;
+`;

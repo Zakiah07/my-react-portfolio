@@ -46,8 +46,8 @@ const Button = styled.div`
 `;
 
 const Descp = styled.div`
-  padding: 30px 180px 30px 180px;
   align-items: center;
+  max-width: 360px;
   justify-content: center;
   display: flex;
   text-align: center;
