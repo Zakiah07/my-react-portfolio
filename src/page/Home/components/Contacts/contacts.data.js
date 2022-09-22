@@ -12,12 +12,12 @@ export const contactsData = {
     {
       name: "Linkedin",
       icon: <FiLinkedin color="#b29eb5" />,
-      link: "https://github.com/Zakiah07",
+      link: "https://www.linkedin.com/in/zakiahhh/",
     },
     {
       name: "Github",
       icon: <TbBrandGithub color="#b29eb5" />,
-      link: "https://www.linkedin.com/in/zakiahhh/",
+      link: "https://github.com/Zakiah07",
     },
   ],
 };
