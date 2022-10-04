@@ -7,6 +7,7 @@ import {
   StyledAnchorExtended,
 } from "./Anchor";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import image7 from "../images/mylogoz.PNG";
 
 const Container = styled.nav`
   display: flex;
@@ -45,7 +46,7 @@ const RightContainer = styled.div`
 
 export const OpenLinksButton = styled.button`
   position: fixed;
-  left: 0px;
+  right: 0px;
   top: 15px;
   width: 90px;
   height: 50px;
@@ -71,11 +72,19 @@ export const NavbarExtendedContainer = styled.div`
   }
 `;
 
+const Img = styled.img`
+  width: 10%;
+  border-radius: 20px;
+  position: fixed;
+  left: 30px;
+`;
+
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
 
   return (
     <Container extendNavbar={extendNavbar}>
+      <Img src={image7} alt={"alt"} />
       <LinksContainer>
         <StyledAnchor href="/#intro">Intro</StyledAnchor>
         <StyledAnchor href="/#skills">Skills</StyledAnchor>

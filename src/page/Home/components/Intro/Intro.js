@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { introData as data } from "./intro.data";
+import image8 from "../images/pic.jpg";
 
 const Container = styled.div`
   display: flex;
@@ -10,7 +11,8 @@ const Container = styled.div`
   padding: 50px 80px;
   row-gap: 30px;
 
-  > h1 {
+  > h1,
+  p {
     text-align: center;
   }
 
@@ -19,11 +21,18 @@ const Container = styled.div`
   }
 `;
 
+const Img = styled.img`
+  border-radius: 20px;
+  position: fixed;
+  left: 30px;
+`;
+
 const Intro = () => {
   return (
     <Container id="intro">
-      <h1> {data.description}</h1>
-      <p>{data.nameintro}</p>
+      <Img src={image8} alt={"alt"} />
+      <h1> {data.nameintro}</h1>
+      <p>{data.description}</p>
       <p> {data.motto}</p>
       <img height={300} width={300} src={data.img} alt={"alt"} />
     </Container>
