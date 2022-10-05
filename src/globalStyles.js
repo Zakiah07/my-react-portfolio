@@ -26,6 +26,10 @@ const body = css`
     margin: 0;
     padding: 0;
   }
+
+  p {
+    font-size: 18px;
+  }
 `;
 
 const GlobalStyle = createGlobalStyle`

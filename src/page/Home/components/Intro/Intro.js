@@ -6,6 +6,8 @@ import { StyledAnchor } from "../../../../components/Anchor";
 
 const Container = styled.div`
   display: flex;
+  min-height: calc(100vh - 80px);
+
   justify-content: center;
   align-items: center;
   flex-direction: column;

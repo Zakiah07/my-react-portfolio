@@ -4,6 +4,7 @@ import { contactsData } from "./contacts.data";
 import { StyledAnchor } from "../../../../components/Anchor";
 
 const Container = styled.div`
+  min-height: calc(100vh - 80px);
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -62,6 +63,11 @@ const Descp = styled.div`
   display: flex;
   text-align: center;
   line-height: 1.2;
+
+  > p {
+    font-size: 21px;
+    text-align: center;
+  }
 `;
 
 const Contacts = () => {

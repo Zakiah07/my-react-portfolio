@@ -4,7 +4,12 @@ import styled from "styled-components";
 import { skillsData } from "./skills.data";
 
 const Container = styled.div`
-  padding: 40px 30px 20px 30px;
+  padding: 40px 30px 0px 30px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 `;
 
 const ListContainer = styled.div`

@@ -6,13 +6,14 @@ const Container = styled.div`
   padding: 50px 30px 120px 30px;
   align-items: stretch;
   justify-content: center;
+  min-height: 100vh;
   flex-direction: column;
   display: flex;
 `;
 
 const ListContainer = styled.div`
   margin: 0 auto;
-  padding: 50px 0px 30px 0px;
+  padding: 50px 0px 10px 0px;
   display: grid;
   gap: 30px;
   width: 80vw;
@@ -35,15 +36,12 @@ const Box = styled.a`
   color: inherit;
   display: flex;
   width: 100%;
-  z-index: 0;
   background-color: #1d2951;
   flex-direction: column;
-  padding: 10px 30px;
-  position: relative;
-  padding-bottom: 140px;
-  height: auto;
+  padding: 0px;
   cursor: pointer;
   transition: 0.3s ease;
+  justify-content: space-between;
 
   :hover {
     transform: translateY(-20px);
@@ -51,11 +49,12 @@ const Box = styled.a`
 
   @media (max-width: 700px) {
     grid-template-columns: auto;
-    min-height: 530px;
+    padding: 0px;
   }
 `;
 
 const Heading = styled.div`
+  margin-top: 100px;
   justify-content: center;
   display: flex;
 `;
@@ -68,6 +67,7 @@ const Descp = styled.div`
   padding: 20px 10px;
   gap: 30px;
   text-align: center;
+  font-size: 18px;
 `;
 
 const Img = styled.img`
@@ -75,7 +75,6 @@ const Img = styled.img`
   bottom: 0;
   left: 0;
   border-bottom-left-radius: 20px;
-  position: absolute;
   border-bottom-right-radius: 20px;
 `;
 
@@ -104,10 +103,8 @@ const Projects = () => {
                   <p>{language}</p>
                 ))}
               </LanguageList>
-              <div>
-                <Img src={project.img} alt={"alt"} />
-              </div>
             </Descp>
+            <Img src={project.img} alt={"alt"} />
           </Box>
         ))}
       </ListContainer>
