@@ -73,7 +73,7 @@ export const NavbarExtendedContainer = styled.div`
 `;
 
 const Img = styled.img`
-  width: 10%;
+  width: 140px;
   border-radius: 20px;
   position: fixed;
   left: 30px;

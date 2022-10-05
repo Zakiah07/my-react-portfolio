@@ -13,7 +13,7 @@ export const introData = {
     <br />,
     "Then, I continued the journey with learning HTML, CSS, JavaScript and into the framework which is React.",
     <br />,
-    "I explored interesting libraries like Redux Toolkit, MUI, react-router-dom and a few more.",
+    "I explored interesting libraries like Redux Toolkit, MUI, React Router and a few more.",
     <br />,
     "I took a course on Introduction to Web Development by Code First Girls and currently taking Google UX Design Professional Certificate.",
     <br />,

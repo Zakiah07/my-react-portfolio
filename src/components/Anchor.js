@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 export const StyledLink = styled(Link)`
   color: inherit;
   text-decoration: none;
+  &:hover {
+    color: #ebcf63;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+  }
 `;
 
 export const StyledAnchor = styled.a`
@@ -12,6 +17,7 @@ export const StyledAnchor = styled.a`
   &:hover {
     color: #ebcf63;
     transition: all 0.3s ease;
+    transform: scale(1.2);
   }
 `;
 

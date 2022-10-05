@@ -50,30 +50,20 @@ const Button = styled.div`
   }
 `;
 
-// const Img = styled.img`
-//   border-radius: 20px;
-//   position: fixed;
-//   left: 30px;
-// `;
-
 const Intro = () => {
-  var link = document.createElement("a");
-  link.href =
-    "https://drive.google.com/file/d/1dlNqnBcH-kr9lMVIexMuEIa5P6vyjIsI/view?usp=sharing";
-  link.download = "file.pdf";
-  // link.dispatchEvent(new MouseEvent("click"));
-
   return (
     <Container id="intro">
-      {/* <Img src={image8} alt={"alt"} /> */}
       <h2> {data.nameintro}</h2>
       <h1>{data.description1}</h1>
       <h3>{data.description2}</h3>
-      <StyledAnchor href={link}>
+      <StyledAnchor
+        href={
+          "https://drive.google.com/file/d/1dlNqnBcH-kr9lMVIexMuEIa5P6vyjIsI/view?usp=sharing"
+        }
+      >
         <Button>Download My Resume</Button>
       </StyledAnchor>
       <p> {data.description3}</p>
-      <img height={300} width={300} src={data.img} alt={"alt"} />
     </Container>
   );
 };

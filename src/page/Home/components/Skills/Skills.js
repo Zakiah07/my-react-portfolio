@@ -1,4 +1,5 @@
 import React from "react";
+import { FaStar } from "react-icons/fa";
 import styled from "styled-components";
 import { skillsData } from "./skills.data";
 
@@ -9,15 +10,20 @@ const Container = styled.div`
 const ListContainer = styled.div`
   display: grid;
   justify-content: center;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin: 0;
-  column-gap: 150px;
   padding: 50px 40px 30px 40px;
-  row-gap: 50px;
-  font-size: 25px;
+  column-gap: 20px;
+  row-gap: 20px;
 
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   @media (max-width: 700px) {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr 1fr;
   }
 `;
 
@@ -26,8 +32,22 @@ const Heading = styled.div`
   display: flex;
 `;
 
-const Descp = styled.div`
+const StarContainer = styled.div`
   color: #ebcf63;
+`;
+
+const SkillBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 10px;
+  font-size: 16px;
+  text-align: center;
+  transition: 0.3s ease;
+  :hover {
+    color: #ebcf63;
+  }
 `;
 
 const Skills = () => {
@@ -38,13 +58,15 @@ const Skills = () => {
       </Heading>
       <ListContainer>
         {skillsData.map((skill) => (
-          <div>
-            <p>{skill.icon}</p>
-            <h4>{skill.name}</h4>
-            <Descp>
-              <p>{skill.description}</p>
-            </Descp>
-          </div>
+          <SkillBox>
+            <>{skill.icon}</>
+            <p>{skill.name}</p>
+            <StarContainer>
+              {new Array(skill.stars).fill("1").map(() => (
+                <FaStar />
+              ))}
+            </StarContainer>
+          </SkillBox>
         ))}
       </ListContainer>
     </Container>

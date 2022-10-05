@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { projectsData } from "./projects.data";
-import { StyledAnchor } from "../../../../components/Anchor";
 
 const Container = styled.div`
   padding: 50px 30px 120px 30px;
@@ -105,9 +104,9 @@ const Projects = () => {
                   <p>{language}</p>
                 ))}
               </LanguageList>
-              <StyledAnchor href={project.link}>
+              <div>
                 <Img src={project.img} alt={"alt"} />
-              </StyledAnchor>
+              </div>
             </Descp>
           </Box>
         ))}
