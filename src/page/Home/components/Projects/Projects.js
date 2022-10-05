@@ -30,8 +30,10 @@ const ListContainer = styled.div`
   }
 `;
 
-const Box = styled.div`
+const Box = styled.a`
   border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
   display: flex;
   width: 100%;
   z-index: 0;
@@ -41,6 +43,12 @@ const Box = styled.div`
   position: relative;
   padding-bottom: 140px;
   height: auto;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  :hover {
+    transform: translateY(-20px);
+  }
 
   @media (max-width: 700px) {
     grid-template-columns: auto;
@@ -80,23 +88,6 @@ const LanguageList = styled.p`
   gap: 30px;
 `;
 
-const Button = styled.div`
-  border-radius: 4px;
-  border: 2px solid #ebcf63;
-  cursor: pointer;
-  background: #b29eb5;
-  white-space: nowrap;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #191c29;
-
-  &:hover {
-    background: #ebcf63;
-    transition: all 0.3s ease-out;
-  }
-`;
-
 const Projects = () => {
   return (
     <Container id="projects">
@@ -105,7 +96,7 @@ const Projects = () => {
       </Heading>
       <ListContainer>
         {projectsData.map((project) => (
-          <Box>
+          <Box href={project.link}>
             <Descp>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
@@ -114,9 +105,6 @@ const Projects = () => {
                   <p>{language}</p>
                 ))}
               </LanguageList>
-              <StyledAnchor href={project.link}>
-                <Button>{project.buttontext}</Button>
-              </StyledAnchor>
               <StyledAnchor href={project.link}>
                 <Img src={project.img} alt={"alt"} />
               </StyledAnchor>

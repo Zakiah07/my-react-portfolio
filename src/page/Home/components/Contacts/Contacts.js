@@ -4,12 +4,17 @@ import { contactsData } from "./contacts.data";
 import { StyledAnchor } from "../../../../components/Anchor";
 
 const Container = styled.div`
-  padding: 40px 40px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   display: flex;
   gap: 20px;
+  padding-bottom: 50px;
+
+  > p {
+    font-size: 17px;
+    text-align: center;
+  }
 `;
 
 const IconContainer = styled.a`
@@ -20,6 +25,11 @@ const IconContainer = styled.a`
   gap: 30px;
   font-size: 40px;
   color: #b29eb5;
+  transition: 0.3s ease;
+
+  :hover {
+    transform: scale(1.5);
+  }
 `;
 
 const ListContainer = styled.div`
@@ -47,10 +57,11 @@ const Button = styled.div`
 
 const Descp = styled.div`
   align-items: center;
-  max-width: 360px;
+  max-width: 480px;
   justify-content: center;
   display: flex;
   text-align: center;
+  line-height: 1.2;
 `;
 
 const Contacts = () => {
@@ -68,6 +79,7 @@ const Contacts = () => {
           <IconContainer href={platform.link}>{platform.icon}</IconContainer>
         ))}
       </ListContainer>
+      <p>This project was coded by Zakiah Hashim 👩‍💻</p>
     </Container>
   );
 };

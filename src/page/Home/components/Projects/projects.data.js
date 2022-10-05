@@ -21,7 +21,6 @@ export const projectsData = [
       <FaReact />,
       <SiRedux />,
     ],
-    buttontext: "Check It Out !",
     img: image6,
     alt: "Image",
     link: "https://all-about-cryptoverse.netlify.app/",
@@ -37,7 +36,6 @@ export const projectsData = [
       <FaReact />,
       <SiRedux />,
     ],
-    buttontext: "Check It Out !",
     img: image5,
     alt: "Image",
     link: "https://restaurantreservation.netlify.app/",
@@ -47,7 +45,6 @@ export const projectsData = [
     description:
       "A basic React JS based travel package where the interface is adpoted from MUI library.",
     languages: [<IoLogoHtml5 />, <IoLogoCss3 />, <SiJavascript />, <FaReact />],
-    buttontext: "Check It Out !",
     img: image4,
     alt: "Image",
     link: "https://tourmonkey.netlify.app/",
@@ -57,7 +54,6 @@ export const projectsData = [
     description:
       "This project is focusing on styling the components for a marketing agency.",
     languages: [<IoLogoHtml5 />, <IoLogoCss3 />, <SiJavascript />, <FaReact />],
-    buttontext: "Check It Out !",
     img: image1,
     alt: "Image",
     link: "https://marketingplatform.netlify.app/",
@@ -67,7 +63,6 @@ export const projectsData = [
     description:
       "This project enables user to search a movie based on the data fetched using API from Axios.",
     languages: [<IoLogoHtml5 />, <IoLogoCss3 />, <SiJavascript />, <FaReact />],
-    buttontext: "Check It Out !",
     img: image2,
     alt: "Image",
     link: "https://moviedatabasez.netlify.app/",
@@ -77,7 +72,6 @@ export const projectsData = [
     description:
       "A simple Todo List where user can mark, delete and edit their Todo inputs.",
     languages: [<IoLogoHtml5 />, <IoLogoCss3 />, <SiJavascript />, <FaReact />],
-    buttontext: "Check It Out !",
     img: image3,
     alt: "Image",
     link: "https://todolistzz.netlify.app/",
