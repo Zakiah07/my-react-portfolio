@@ -27,6 +27,11 @@ export const StyledLinkExtended = styled(Link)`
   font-family: inherit;
   text-decoration: none;
   margin: 10px;
+  &:hover {
+    color: #ebcf63;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+  }
 `;
 
 export const StyledAnchorExtended = styled.a`
@@ -35,4 +40,9 @@ export const StyledAnchorExtended = styled.a`
   font-family: inherit;
   text-decoration: none;
   margin: 10px;
+  &:hover {
+    color: #ebcf63;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+  }
 `;
