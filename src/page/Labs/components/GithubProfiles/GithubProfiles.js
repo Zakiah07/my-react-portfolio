@@ -116,7 +116,8 @@ function GithubProfiles() {
     setUserInput(e.target.value);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     fetch(`https://api.github.com/users/${userInput}`)
       .then((res) => res.json())
       .then((data) => {
@@ -129,10 +130,6 @@ function GithubProfiles() {
       });
   };
 
-  const onClickButton = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <Container>
       <div>
@@ -140,11 +137,7 @@ function GithubProfiles() {
           <h1>Any Github Profile to Check ?</h1>
         </Heading>
       </div>
-      <form
-        className="user-form"
-        onSubmit={handleSubmit}
-        onClick={onClickButton}
-      >
+      <form className="user-form" onSubmit={handleSubmit}>
         <input
           className="user-input"
           type="text"
@@ -152,7 +145,9 @@ function GithubProfiles() {
           placeholder="Search a Github User"
           onChange={handleSearch}
         />
-        <button className="user-button">Search</button>
+        <button className="user-button" type="submit">
+          Search
+        </button>
       </form>
       {error ? (
         <h1>{error}</h1>
