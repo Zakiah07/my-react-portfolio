@@ -60,7 +60,7 @@ const Intro = () => {
       <h3>{data.description2}</h3>
       <StyledAnchor
         href={
-          "https://drive.google.com/file/d/1dlNqnBcH-kr9lMVIexMuEIa5P6vyjIsI/view?usp=sharing"
+          "https://drive.google.com/file/d/14xufnKnfh3jaUtW7sGUVI2ePl881nHjP/view?usp=sharing"
         }
       >
         <Button>Download My Resume</Button>
